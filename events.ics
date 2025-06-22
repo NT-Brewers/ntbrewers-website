@@ -1,0 +1,32 @@
+---
+layout: none
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:http://ntbrewers.org
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:{{site.timezone}}
+TZURL:http://tzurl.org/zoneinfo-outlook/{{site.timezone}}
+X-LIC-LOCATION:{{site.timezone}}
+BEGIN:STANDARD
+TZOFFSETFROM:{{ site.time | date: "%z" }}
+TZOFFSETTO:{{ site.time | date: "%z" }}
+TZNAME:{{ site.time | date: "%Z" }}
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+{% assign sorted = site.events | sort: 'date' | reverse %}
+{% for event in sorted limit:10 %}BEGIN:VEVENT
+UID:{{event.title | truncate: 40, "" | trim | url_encode }}{{ event.date | date: "%Y%m%d" }}@ntbrewers.org
+ORGANIZER;CN="Darwin and NT Homebrewers":MAILTO:contact@ntbrewers.org
+LOCATION:{{event.location.title}}
+URL:http://ntbrewers.org{{site.baseurl}}{{event.url}}
+SUMMARY:{{ event.title }}
+DESCRIPTION:{{event.excerpt | newline_to_br | replace: '<br />', '\n' | strip_html | strip |  truncate: 60 }}
+CLASS:PUBLIC
+DTSTART;TZID={{site.timezone}}:{{ event.date | date: "%Y%m%dT%H%M%S" }}
+DTEND;TZID={{site.timezone}}:{{ event.date | date: "%s" | plus: 3600 | date: "%Y%m%dT%H%M%S" }}
+DTSTAMP;TZID={{site.timezone}}:{{ event.date | date: "%Y%m%dT%H%M%S" }}
+END:VEVENT
+{% endfor %}END:VCALENDAR
