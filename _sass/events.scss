@@ -61,7 +61,7 @@ $light-text: #5b5b5b;
 
 .event--hide-extra {
   .event-item__item {
-    &:nth-of-type(n+2) {
+    &:nth-of-type(n+3) {
       display: none;
     }
   }
