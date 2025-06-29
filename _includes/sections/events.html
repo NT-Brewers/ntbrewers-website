@@ -9,7 +9,7 @@
 	{{ section.content }}
 
 	{% assign events = site.events | sort: 'date' %}
-	<article class="event__upcoming">
+	<article class="event__upcoming event--hide-extra">
 		<h3 class="event__upcoming__title">Upcoming Events</h3>
 		{% for event in events %}
 			{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
@@ -20,4 +20,7 @@
 		{% endfor %}
 	</div>
 
+
+    <div id="club-calendar"></div>
+    <script src="/assets/calendar.js"></script>
 </section>

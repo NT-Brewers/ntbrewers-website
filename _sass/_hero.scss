@@ -10,6 +10,7 @@
 
 	&__logo {
 		width: 200px;
+        max-height: 200px;
 
 		@media(min-width: 800px) {
 			width: 250px;
