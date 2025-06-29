@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     timeZone: 'Australia/Darwin',
     initialView: 'dayGridMonth',
     events: {
-      url: '/events.ics',
+      url: './events.ics',
       format: 'ics'
     }
   });
