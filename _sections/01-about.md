@@ -1,5 +1,8 @@
 ---
 title: About
 ---
-Darwin and NT Homebrewers initially formed as a facebook group for the Darwin Homebrew community and has grown to host social events, an annual nationally accredited competition and smaller fun and informative events.
-If you brew beer, cider or mead, no matter how long you've been brewing for or how simple/complex your process is you're welcome to join and contribute to the community.
+Darwin and NT Homebrewers began as a Facebook group for local homebrewers and has grown into an active community hosting regular social and educational events.
+
+We run member-hosted tastings, workshops, and an annual nationally accredited competition among other events.
+
+If you brew beer, cider, or mead, whether you’re brand new or deeply obsessed, you’re welcome.
