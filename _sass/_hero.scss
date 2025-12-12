@@ -2,10 +2,12 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
 
 	h1 {
 		font-size: 3rem;
-		margin-bottom: 0;
+		margin-bottom: .25rem;
 	}
 
 	&__logo {
@@ -21,9 +23,39 @@
 		}
 	}
 
-	&__description {
-		font-size: 1.1rem;
-		font-style: italic;
+	&__tagline {
+		font-size: 1.2rem;
 		color: #656464;
+		margin: 0 0 1rem 0;
+	}
+
+	&__actions {
+		display: flex;
+		gap: .75rem;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: .5rem;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: .6rem 1rem;
+		border-radius: 6px;
+		font-weight: 600;
+		text-decoration: none;
+		border: 2px solid transparent;
+	}
+
+	.btn--primary {
+		background: $brand-color;
+		color: #fff;
+		&:hover { background: darken($brand-color, 7%); color: #fff; text-decoration: none; }
+	}
+
+	.btn--secondary {
+		background: transparent;
+		border-color: $brand-color;
+		color: $brand-color;
+		&:hover { background: rgba(42,122,226,.08); color: $brand-color; text-decoration: none; }
 	}
 }
