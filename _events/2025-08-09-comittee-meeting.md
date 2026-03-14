@@ -7,4 +7,4 @@ location:
   url:
   address:
 ---
-Quarterly committee catch-up to finalise competition logistics and upcoming events.  All members welcome to observe and contribute.
+Bi-monthly committee catch-up to finalise competition logistics and upcoming events.  All members welcome to observe and contribute.

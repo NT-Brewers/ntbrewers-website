@@ -12,7 +12,9 @@
 
   {%- if section.facebook_username -%}<div class="contact__item"><svg class="svg-icon"><use xdivnk:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg> <a href="https://www.facebook.com/{{ section.facebook_username| cgi_escape | escape }}"><span class="username">{{ section.facebook_username| escape }}</span></a></div>{%- endif -%}
 
-  {%- if section.facebook_group-%}<div class="contact__item"><svg class="svg-icon"><use xdivnk:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg> <a href="https://www.facebook.com/groups/{{ section.facebook_group | append: '' | cgi_escape | escape }}"><span class="username">{{ section.facebook_username| escape }}</span></a></div>{%- endif -%}
+  {%- if section.facebook_group-%}<div class="contact__item"><svg class="svg-icon"><use xdivnk:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg> <a href="https://www.facebook.com/groups/{{ section.facebook_group | append: '' | cgi_escape | escape }}"><span class="username">Join our Facebook group</span></a></div>{%- endif -%}
+
+  {%- if section.email -%}<div class="contact__item"><span class="svg-icon">✉</span> <a href="mailto:{{ section.email | escape }}"><span class="username">Join our mailing list</span></a></div>{%- endif -%}
 
   {%- if section.fdivckr_username -%}<div class="contact__item"><svg class="svg-icon"><use xdivnk:href="{{ '/assets/minima-social-icons.svg#fdivckr' | relative_url }}"></use></svg> <a href="https://www.fdivckr.com/photos/{{ section.fdivckr_username| cgi_escape | escape }}"><span class="username">{{ section.fdivckr_username| escape }}</span></a></div>{%- endif -%}
 
