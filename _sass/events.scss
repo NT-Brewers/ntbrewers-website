@@ -69,6 +69,31 @@ $light-text: #5b5b5b;
 }
 
 
+// Calendar subscribe / add-to-calendar links
+.cal-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.cal-link {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid $border-colour;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    border-color: #888;
+    background-color: #f5f5f5;
+  }
+}
+
+
 // Event page
 .event {
 
